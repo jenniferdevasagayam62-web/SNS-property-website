@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SS Strategic Real Estate Advisory — thoughtful property strategy and trusted real estate guidance.">
+<title>SS | Strategic Real Estate Advisory</title>
+<style>
+:root{--navy:#090642;--navy2:#10283c;--gold:#d5a51d;--ink:#172331;--muted:#65717d;--paper:#f7f8fa;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1120px,92%);margin:auto}
+.site-header{position:absolute;top:16px;left:0;right:0;z-index:5}.nav{width:min(1120px,92%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:9px 18px;background:rgba(9,6,66,.94);border:1px solid rgba(255,255,255,.16);border-radius:40px;color:#fff;box-shadow:0 8px 24px #0002}.brand{display:flex;align-items:center;gap:9px;font-size:11px;letter-spacing:2px;font-weight:700}.logo{width:31px;height:31px;display:grid;place-items:center;border:1px solid var(--gold);border-radius:50%;color:var(--gold);font-family:Georgia,serif;font-size:12px;letter-spacing:-2px;flex-shrink:0}.nav-links{display:flex;align-items:center;gap:22px;font-size:10px}.nav-links a{opacity:.9;transition:color .2s}.nav-links a:hover{color:var(--gold)}.nav-cta{padding:7px 14px;border-radius:30px;background:#fff;color:var(--navy);font-size:10px;font-weight:700}.menu-toggle{display:none;background:none;border:0;color:white;font-size:24px;cursor:pointer}
+.hero{height:520px;min-height:440px;position:relative;display:flex;align-items:flex-end;background:linear-gradient(180deg,#09152b00 25%,#08063f 76%),url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=2000&q=85') center 44%/cover no-repeat}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,14,29,.15),transparent 65%)}.hero-content{position:relative;color:#fff;text-align:center;width:100%;padding:45px 20px 37px;background:linear-gradient(180deg,transparent,rgba(9,6,66,.96) 26%)}.eyebrow{font-size:10px;letter-spacing:2.2px;text-transform:uppercase;color:var(--gold);font-weight:700}.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(27px,4vw,45px);line-height:1.13;font-weight:400;margin:10px auto 12px;max-width:780px}.hero p{max-width:600px;margin:0 auto 20px;font-size:13px;color:#e2e4ef}.gold-btn{display:inline-block;background:var(--gold);color:#17112d;padding:11px 22px;border:0;border-radius:2px;font-size:11px;font-weight:700;letter-spacing:.4px;cursor:pointer;transition:transform .2s,background .2s}.gold-btn:hover{transform:translateY(-2px);background:#edc449}
+section{padding:70px 0}.section-label{color:var(--gold);font-size:10px;text-transform:uppercase;letter-spacing:2px;font-weight:700}.section-title{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(25px,3vw,36px);line-height:1.2;margin:9px 0 16px;color:#15202d}.intro{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:center}.portrait{position:relative;max-width:390px;margin:auto}.portrait img{display:block;width:100%;height:390px;object-fit:cover;border-radius:3px;box-shadow:14px 14px 0 #e8e7e0}.portrait-tag{position:absolute;bottom:18px;left:-14px;background:var(--navy);color:#fff;padding:12px 16px;font-size:11px;letter-spacing:.5px}.intro-copy p,.service-card p,.feature-copy p{font-size:13px;color:var(--muted);line-height:1.9}.signature{margin-top:22px;font-family:Georgia,serif;font-style:italic;font-size:21px;color:var(--navy)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px;padding-top:22px;border-top:1px solid #e8e9ec}.stat strong{display:block;color:var(--navy);font-family:Georgia,serif;font-size:22px;font-weight:400}.stat span{font-size:10px;color:var(--muted)}
+.services{background:linear-gradient(115deg,#10273a,#09152a);color:white}.services .section-title{color:#fff}.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:28px}.section-head p{max-width:430px;font-size:12px;color:#c3cbd3;margin:0}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.service-card{background:#fff;color:var(--ink);padding:26px 24px;border-radius:3px;min-height:220px;box-shadow:0 8px 24px #0002}.service-icon{width:40px;height:40px;border:1px solid #e8d28b;color:#b78b11;display:grid;place-items:center;border-radius:50%;font-size:18px;margin-bottom:17px}.service-card h3{font-family:Georgia,serif;font-size:18px;font-weight:400;margin:0 0 8px}.service-card p{font-size:12px;margin:0 0 16px}.text-link{font-size:10px;font-weight:700;letter-spacing:.6px;color:var(--navy);border-bottom:1px solid var(--gold);padding-bottom:4px}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.benefits{display:grid;gap:10px}.benefit{padding:15px 17px;background:#fff8d9;border-left:3px solid var(--gold)}.benefit h3{margin:0 0 4px;font-size:12px;color:#25202a}.benefit p{margin:0;font-size:11px;color:#68615a}.feature-image{height:270px;border-radius:4px;overflow:hidden}.feature-image img{width:100%;height:100%;object-fit:cover}.feature-copy{padding:4px 0}.feature-copy h2{font-family:Georgia,serif;font-size:31px;font-weight:400;line-height:1.2;margin:0 0 12px}.feature-copy h2 span{color:var(--gold)}.feature-copy p{margin-bottom:20px}
+.edge{padding-top:5px}.center{text-align:center}.edge-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:28px}.edge-card{height:245px;position:relative;overflow:hidden;border-radius:5px;color:white;box-shadow:0 8px 18px #09152a20}.edge-card img{width:100%;height:100%;object-fit:cover;transition:transform .45s}.edge-card:hover img{transform:scale(1.07)}.edge-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 20%,rgba(4,13,24,.9))}.edge-text{position:absolute;z-index:1;left:16px;right:13px;bottom:17px}.edge-text span{font-size:9px;letter-spacing:1.3px;text-transform:uppercase;color:#f3d36e}.edge-text h3{font-family:Georgia,serif;font-size:17px;font-weight:400;line-height:1.2;margin:7px 0}.edge-text p{font-size:10px;color:#e0e5e9;margin:0}
+.contact-cta{padding:45px 20px 62px;text-align:center}.contact-panel{max-width:780px;margin:auto;padding:32px 25px;border:1px solid #eef0f2;box-shadow:0 10px 35px #07152a08}.contact-panel h2{font-family:Georgia,serif;font-size:27px;font-weight:400;margin:8px 0}.contact-panel p{font-size:12px;color:var(--muted);margin:0 auto 20px;max-width:490px}.outline-btn{display:inline-block;border:1px solid var(--navy);border-radius:30px;padding:10px 21px;color:var(--navy);font-size:10px;font-weight:700;letter-spacing:.4px;transition:all .2s}.outline-btn:hover{background:var(--navy);color:white}
+footer{background:var(--navy);color:#fff;border-radius:12px 12px 0 0;padding:36px 0 22px}.footer-main{display:grid;grid-template-columns:1.2fr 1.2fr .7fr .7fr;gap:30px;align-items:start}.footer-brand{display:flex;align-items:center;gap:12px}.footer-brand .logo{width:48px;height:48px;font-size:17px}.footer-brand strong{display:block;font-family:Georgia,serif;font-weight:400;font-size:18px}.footer-brand small{font-size:9px;color:#c7c8db;letter-spacing:1px}.footer-copy{font-size:10px;color:#c5c6d8;max-width:250px;margin-top:12px}.footer-col h4{font-size:10px;letter-spacing:1px;color:var(--gold);margin:0 0 12px}.footer-col a,.footer-col p{display:block;font-size:10px;color:#d4d5e3;margin:7px 0}.copyright{border-top:1px solid #ffffff25;margin-top:28px;padding-top:15px;display:flex;justify-content:space-between;gap:12px;font-size:9px;color:#a9abc7}.toast{position:fixed;right:20px;bottom:20px;z-index:20;background:var(--navy);color:#fff;padding:14px 18px;border-left:3px solid var(--gold);box-shadow:0 10px 35px #0003;font-size:12px;display:none}.toast.show{display:block;animation:pop .25s ease}@keyframes pop{from{transform:translateY(8px);opacity:0}to{transform:translateY(0);opacity:1}}
+@media(max-width:760px){.site-header{top:10px}.nav{padding:8px 13px}.brand{font-size:9px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:52px;left:4%;right:4%;padding:18px;background:var(--navy);border-radius:12px;flex-direction:column;gap:16px;align-items:stretch}.nav-links.open{display:flex}.nav-cta{text-align:center}.hero{height:500px}.hero-content{padding-bottom:30px}.intro,.feature{grid-template-columns:1fr;gap:30px}.portrait{max-width:340px}.portrait img{height:340px}.intro-copy{max-width:600px;margin:auto}.service-grid{grid-template-columns:1fr}.service-card{min-height:auto}.section-head{display:block}.section-head p{margin-top:12px}.feature-image{height:250px;grid-row:1}.edge-grid{grid-template-columns:repeat(2,1fr)}.edge-card{height:230px}.footer-main{grid-template-columns:1fr 1fr}.footer-brand-block{grid-column:1/-1}.stats{grid-template-columns:repeat(2,1fr);row-gap:18px}section{padding:55px 0}}
+@media(max-width:420px){.hero{height:470px}.hero h1{font-size:29px}.edge-grid{gap:10px}.edge-card{height:205px}.edge-text{left:11px;right:9px;bottom:12px}.edge-text h3{font-size:15px}.footer-main{gap:22px}.copyright{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="SS Advisory home"><span class="logo">SS</span><span>STRATEGIC<br>ADVISORY</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Our Services</a><a href="#edge">Our Edge</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Let's Connect</a>
+    </div>
+  </nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">Real estate • Strategy • Relationships</div>
+    <h1>Strategic Real Estate Advisory</h1>
+    <p>Clarity for your next move. Trusted insight, thoughtful strategy, and a personal approach to every property decision.</p>
+    <a class="gold-btn" href="#contact">SCHEDULE A CONSULTATION&nbsp; ↗</a>
+  </div>
+</section>
+<section id="about">
+  <div class="wrap intro">
+    <div class="portrait">
+      <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85" alt="Professional advisory team in a meeting">
+      <div class="portrait-tag">Experience. Insight. Trust.</div>
+    </div>
+    <div class="intro-copy">
+      <div class="section-label">A personal approach</div>
+      <h2 class="section-title">Your Trusted Real Estate Advisor</h2>
+      <p>Real estate decisions are about more than buildings. They are about people, ambitions, and the future you want to create. We combine market understanding with considered advice to help you move forward with confidence.</p>
+      <p>From the first conversation to the final decision, our focus is on clear communication, long-term relationships, and outcomes that make sense for you.</p>
+      <div class="signature">Sincerely, SS Advisory</div>
+      <div class="stats">
+        <div class="stat"><strong>15+</strong><span>Years of insight</span></div>
+        <div class="stat"><strong>250+</strong><span>Client relationships</span></div>
+        <div class="stat"><strong>12</strong><span>Markets explored</span></div>
+        <div class="stat"><strong>100%</strong><span>Client focused</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head"><div><div class="section-label">What we do</div><h2 class="section-title">Our Advisory Services</h2></div><p>Thoughtful guidance and a tailored strategy at every stage of your real estate journey.</p></div>
+    <div class="service-grid">
+      <article class="service-card"><div class="service-icon">⌂</div><h3>Real Estate Strategy</h3><p>Make informed decisions with a clear plan shaped around your goals, priorities, and the market.</p><a class="text-link" href="#contact">EXPLORE SERVICE&nbsp; ↗</a></article>
+      <article class="service-card"><div class="service-icon">◇</div><h3>Investment Advisory</h3><p>Identify opportunities, understand risk, and assess potential with a considered investment perspective.</p><a class="text-link" href="#contact">EXPLORE SERVICE&nbsp; ↗</a></article>
+      <article class="service-card"><div class="service-icon">◎</div><h3>Property Acquisition</h3><p>Navigate your next acquisition with focused research, practical insight, and dedicated support.</p><a class="text-link" href="#contact">EXPLORE SERVICE&nbsp; ↗</a></article>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap feature">
+    <div class="benefits">
+      <div class="benefit"><h3>01 &nbsp; A clear, tailored strategy</h3><p>Advice aligned with your ambitions and circumstances.</p></div>
+      <div class="benefit"><h3>02 &nbsp; Insight that matters</h3><p>Market context that helps you see the bigger picture.</p></div>
+      <div class="benefit"><h3>03 &nbsp; Personal partnership</h3><p>Responsive support, honest conversations, and care.</p></div>
+      <div class="benefit"><h3>04 &nbsp; Long-term perspective</h3><p>Decisions considered beyond the immediate moment.</p></div>
+    </div>
+    <div class="feature-copy">
+      <div class="feature-image"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1100&q=85" alt="Modern glass skyscrapers in a business district"></div>
+      <div class="section-label" style="margin-top:22px">Your goals. Our focus.</div>
+      <h2>Experience You<br><span>Can Rely On</span></h2>
+      <p>Every property journey is different. We listen first, bring the right information to the table, and work alongside you to make complex choices feel clearer.</p>
+      <a class="outline-btn" href="#contact">GET TO KNOW US&nbsp; ↗</a>
+    </div>
+  </div>
+</section>
+<section class="edge" id="edge">
+  <div class="wrap">
+    <div class="center"><div class="section-label">The difference</div><h2 class="section-title">Our Edge</h2><p style="font-size:12px;color:var(--muted);max-width:550px;margin:0 auto">A thoughtful blend of market knowledge, personal attention, and a perspective built around your future.</p></div>
+    <div class="edge-grid">
+      <article class="edge-card"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80" alt="Contemporary commercial towers"><div class="edge-text"><span>01 / Perspective</span><h3>Market Intelligence</h3><p>Insight to help you make confident decisions.</p></div></article>
+      <article class="edge-card"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=80" alt="Modern light-filled office"><div class="edge-text"><span>02 / Partnership</span><h3>Personal Attention</h3><p>Your priorities remain at the centre.</p></div></article>
+      <article class="edge-card"><img src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=700&q=80" alt="Architectural detail of a modern building"><div class="edge-text"><span>03 / Strategy</span><h3>Tailored Solutions</h3><p>A plan designed around your objectives.</p></div></article>
+      <article class="edge-card"><img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=700&q=80" alt="Sculptural modern architecture"><div class="edge-text"><span>04 / Confidence</span><h3>Trusted Guidance</h3><p>Clear communication at every step.</p></div></article>
+    </div>
+  </div>
+</section>
+<section class="contact-cta" id="contact">
+  <div class="contact-panel"><div class="section-label">Start a conversation</div><h2>Connect with our experienced consultants</h2><p>Have a property question or a goal in mind? Let's talk about how a considered strategy can help you take the next step.</p><a class="outline-btn" href="mailto:hello@ssadvisory.example?subject=Consultation%20request">SCHEDULE A CONSULTATION&nbsp; ↗</a></div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-main">
+      <div class="footer-brand-block"><div class="footer-brand"><span class="logo">SS</span><div><strong>Strategic Advisory</strong><small>REAL ESTATE • INVESTMENT</small></div></div><p class="footer-copy">Independent thinking. Personal advice. A clearer path to your real estate goals.</p></div>
+      <div class="footer-col"><h4>GET IN TOUCH</h4><p>Chennai, Tamil Nadu, India</p><a href="mailto:hello@ssadvisory.example">hello@ssadvisory.example</a><a href="#contact">Book a consultation ↗</a></div>
+      <div class="footer-col"><h4>EXPLORE</h4><a href="#about">About us</a><a href="#services">Services</a><a href="#edge">Our edge</a></div>
+      <div class="footer-col"><h4>FOLLOW</h4><a href="#contact">LinkedIn ↗</a><a href="#contact">Instagram ↗</a></div>
+    </div>
+    <div class="copyright"><span>© <span id="year"></span> SS Strategic Advisory. All rights reserved.</span><span>Privacy · Terms</span></div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite">Thanks for your interest. Please email us to arrange a consultation.</div>
+<script>
+const menuToggle=document.getElementById('menuToggle');
+const navLinks=document.getElementById('navLinks');
+menuToggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'×':'☰';});
+navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰';}));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.querySelectorAll('a[href="#contact"]').forEach(link=>{link.addEventListener('click',()=>{const toast=document.getElementById('toast');if(link.classList.contains('text-link')){toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),3500);}})});
+</script>
+</body>
+</html>
